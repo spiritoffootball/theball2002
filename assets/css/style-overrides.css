@@ -1,0 +1,85 @@
+/*
+===============================================================
+Child Theme Styles
+===============================================================
+AUTHOR: Christian Wach <needle@haystack.co.uk>
+---------------------------------------------------------------
+NOTES
+
+---------------------------------------------------------------
+*/
+
+
+
+/* Header Background */
+#header_top
+{
+	background: #0A0933 url("../images/interface/2002_route_taller.jpg") 22px top no-repeat;
+}
+
+
+
+/* Team */
+.page-id-107 .main_column .post img
+{
+	float: right;
+	width: auto !important;
+}
+
+.person
+{
+	clear: right;
+	padding: 10px 0;
+}
+
+.person p.restricted_width
+{
+	margin-right: 160px;
+}
+
+.person p img
+{
+	margin-left: 80px;
+}
+
+
+
+/* Homepage */
+#startpoint
+{
+	float: left;
+	width: 222px;
+	padding: 1px;
+}
+
+#about_video
+{
+	margin-left: 224px;
+	padding: 1px;
+}
+
+
+
+/* sponsors on white */
+#sponsor_logos
+{
+	background: #fff;
+	padding: 20px;
+	max-width: 640px;
+	margin: 0 auto;
+	-moz-border-radius: 12px;
+	-khtml-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	border-radius: 12px;
+}
+
+#sponsors ul li
+{
+	display: inline-block;
+	margin: 5px 15px 5px 0;
+	padding: 0;
+	line-height: 1.5;
+}
+
+
+
