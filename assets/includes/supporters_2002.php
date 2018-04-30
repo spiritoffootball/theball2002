@@ -1,23 +1,34 @@
-<!-- Begin sponsors -->
+<?php /*
+================================================================================
+Supporters 2002 Template
+================================================================================
+AUTHOR: Christian Wach <needle@haystack.co.uk>
+--------------------------------------------------------------------------------
+NOTES
+
+--------------------------------------------------------------------------------
+*/
+
+?><!-- assets/includes/supporters_2002.php -->
 <div id="sponsors" class="clearfix">
 
-<div id="sponsor_logos">
+	<div id="sponsor_logos">
 
-<ul>
+		<ul>
 
-<li><a href="http://www.filmsat59.com/" title="Films at 59"><img class="partner_logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partners/filmsat59.jpg" alt="Films at 59 Logo" /></a></li>
+			<li><a href="http://www.filmsat59.com/" title="Films at 59"><img class="partner_logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partners/filmsat59.jpg" alt="Films at 59 Logo" /></a></li>
 
-<li><img class="partner_logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partners/juniperblue.png" alt="JuniperBlue Logo" /></li>
+			<li><img class="partner_logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partners/juniperblue.png" alt="JuniperBlue Logo" /></li>
 
-<li><img class="partner_logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partners/bric.jpg" alt="Bristol Interactive Cluster Logo" /></li>
+			<li><img class="partner_logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partners/bric.jpg" alt="Bristol Interactive Cluster Logo" /></li>
 
-<li><img class="partner_logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partners/mediawire.jpg" alt="Berlin-Bristol Mediawire Logo" /></li>
+			<li><img class="partner_logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partners/mediawire.jpg" alt="Berlin-Bristol Mediawire Logo" /></li>
 
-<li><a href="http://www.intermark.ru/" title="Intermark"><img class="partner_logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partners/intermark.jpg" alt="Intermark Logo" /></a></li>
+			<li><a href="http://www.intermark.ru/" title="Intermark"><img class="partner_logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partners/intermark.jpg" alt="Intermark Logo" /></a></li>
 
-</ul>
+		</ul>
 
-</div><!-- sponsor_logos -->
+	</div><!-- sponsor_logos -->
 
 </div><!-- /sponsors -->
 
