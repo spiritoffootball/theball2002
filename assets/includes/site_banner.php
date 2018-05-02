@@ -19,7 +19,7 @@ NOTES
 
 		<div id="splash">
 
-			<a href="/2002/files/2005/06/china_wall_kick.jpg"><img src="/2002/files/2005/06/china_wall_kick-200x150.jpg" alt="The Ball 2002 is kicked over the Great Wall of China on its way to Korea &amp; Japan" title="The Ball 2002 is kicked over the Great Wall of China on its way to Korea &amp; Japan" width="200" height="150" class="size-thumbnail-200 wp-image-482" /></a>
+			<a href="/2002/files/2005/06/china_wall_kick.jpg"><img src="/2002/files/2005/06/china_wall_kick.jpg" alt="The Ball 2002 is kicked over the Great Wall of China on its way to Korea &amp; Japan" title="The Ball 2002 is kicked over the Great Wall of China on its way to Korea &amp; Japan" width="200" height="150" class="size-thumbnail-200 wp-image-482" /></a>
 
 		</div><!-- /splash -->
 
