@@ -13,7 +13,7 @@ Theme amendments and overrides.
 
 
 
-// set our version here
+// Set our version here.
 define( 'THEBALL2002_VERSION', '1.0.5' );
 
 
@@ -23,7 +23,9 @@ define( 'THEBALL2002_VERSION', '1.0.5' );
  *
  * @since 1.0
  */
-if ( ! isset( $content_width ) ) { $content_width = 660; }
+if ( ! isset( $content_width ) ) {
+	$content_width = 660;
+}
 
 
 
@@ -45,7 +47,7 @@ function theball2002_setup() {
 
 }
 
-// add after theme setup hook
+// Add after theme setup hook.
 add_action( 'after_setup_theme', 'theball2002_setup' );
 
 
@@ -57,18 +59,18 @@ add_action( 'after_setup_theme', 'theball2002_setup' );
  */
 function theball2002_enqueue_styles() {
 
-	// enqueue file
+	// Enqueue file.
 	wp_enqueue_style(
 		'theball2002_css',
 		get_stylesheet_directory_uri() . '/assets/css/style-overrides.css',
-		array( 'theball_screen_css' ),
-		THEBALL2002_VERSION, // version
-		'all' // media
+		[ 'theball_screen_css' ],
+		THEBALL2002_VERSION, // Version.
+		'all' // Media.
 	);
 
 }
 
-// add a filter for the above
+// Add a filter for the above.
 add_filter( 'wp_enqueue_scripts', 'theball2002_enqueue_styles', 105 );
 
 
@@ -83,8 +85,8 @@ add_filter( 'wp_enqueue_scripts', 'theball2002_enqueue_styles', 105 );
  */
 function theball2002_theball_image( $default ) {
 
-	// ignore default and set our own
-	return '<a href="' . get_option( 'home' ) . '" title="' . __( 'Home', 'theball2002' ) . '" class="ball_image">' .
+	// Ignore default and set our own.
+	return '<a href="' . get_home_url( null, '/' ) . '" title="' . __( 'Home', 'theball2002' ) . '" class="ball_image">' .
 			'<img src="' . get_stylesheet_directory_uri() . '/assets/images/interface/the_ball_2002.png" ' .
 				 'alt="' . esc_attr( __( 'The Ball 2002', 'theball2002' ) ) . '" ' .
 				 'title="' . esc_attr( __( 'The Ball 2002', 'theball2002' ) ) . '" ' .
@@ -94,7 +96,7 @@ function theball2002_theball_image( $default ) {
 
 }
 
-// add a filter for the above
+// Add a filter for the above.
 add_filter( 'theball_image', 'theball2002_theball_image', 10, 1 );
 
 
@@ -109,12 +111,12 @@ add_filter( 'theball_image', 'theball2002_theball_image', 10, 1 );
  */
 function theball2002_supporters_file( $default ) {
 
-	// return our theme's supporters list file
+	// Return our theme's supporters list file.
 	return get_stylesheet_directory() . '/assets/includes/supporters_2002.php';
 
 }
 
-// add a filter for the above
+// Add a filter for the above.
 add_filter( 'theball_supporters', 'theball2002_supporters_file', 10, 1 );
 
 
@@ -126,12 +128,12 @@ add_filter( 'theball_supporters', 'theball2002_supporters_file', 10, 1 );
  */
 function theball2002_video_width( $default ) {
 
-	// return full width
+	// Return full width.
 	return 640;
 
 }
 
-// add a filter for the above
+// Add a filter for the above.
 add_filter( 'sofvm_video_width', 'theball2002_video_width', 10, 1 );
 
 
@@ -143,12 +145,12 @@ add_filter( 'sofvm_video_width', 'theball2002_video_width', 10, 1 );
  */
 function theball2002_video_height( $default ) {
 
-	// return full height
+	// Return full height.
 	return 480;
 
 }
 
-// add a filter for the above
+// Add a filter for the above.
 add_filter( 'sofvm_video_height', 'theball2002_video_height', 10, 1 );
 
 
@@ -160,16 +162,16 @@ add_filter( 'sofvm_video_height', 'theball2002_video_height', 10, 1 );
  */
 function theball2002_change_page_menu_classes( $menu ) {
 
-	// access post
+	// Access post.
 	global $post;
 
-	// is this our video post type?
+	// Is this our video post type?
 	if ( get_post_type( $post ) == 'sofvm_video' ) {
 
-		// remove all current_page_parent classes
+		// Remove all current_page_parent classes.
 		$menu = str_replace( 'current_page_parent', '', $menu );
 
-		// add the current_page_parent class to the page we want
+		// Add the current_page_parent class to the page we want.
 		$menu = str_replace( 'menu-item-499', 'menu-item-499 current_page_parent', $menu );
 
 	}
@@ -179,7 +181,7 @@ function theball2002_change_page_menu_classes( $menu ) {
 
 }
 
-// add a filter for the above
+// Add a filter for the above.
 add_filter( 'wp_nav_menu', 'theball2002_change_page_menu_classes', 10, 1 );
 
 
@@ -191,12 +193,12 @@ add_filter( 'wp_nav_menu', 'theball2002_change_page_menu_classes', 10, 1 );
  */
 function theball2002_topics( $default ) {
 
-	// return our theme's supporters list file
+	// Return our theme's supporters list file.
 	return __( 'Countries', 'theball2002' );
 
 }
 
-// add a filter for the above
+// Add a filter for the above.
 add_filter( 'theball_topics_title', 'theball2002_topics', 10, 1 );
 
 
