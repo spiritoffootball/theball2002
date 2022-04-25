@@ -1,13 +1,10 @@
-<?php /*
-================================================================================
-Site Banner Template
-================================================================================
-AUTHOR: Christian Wach <needle@haystack.co.uk>
---------------------------------------------------------------------------------
-NOTES
-
---------------------------------------------------------------------------------
-*/
+<?php
+/**
+ * Site Banner Template.
+ *
+ * @since 1.0.0
+ * @package The_Ball_2002
+ */
 
 ?><!-- assets/includes/site_banner.php -->
 
@@ -28,12 +25,12 @@ NOTES
 
 		<div id="banner_copy">
 
-			<h2>Welcome to <?php bloginfo( 'title' ); if ( is_home() ) { echo ' blog'; } ?></h2>
+			<h2><?php echo sprintf( __( 'Welcome to %s', 'theball2002' ), get_bloginfo( 'title' ) ); ?></h2>
 
 			<p>The Ball 2002 set off across Europe &amp; Asia to uncover the spirit of football and established the legend of The Ball as a powerful symbol for the football community. It is not just any ball, it is <em>The Ball</em>, the star of the beautiful game.</p>
 
 			<?php if ( ! is_home() ) { ?>
-				<p id="gotoblog"><a href="/2002/blog/">Read the blog &rarr;</a></p>
+				<p id="gotoblog"><a href="/2002/blog/"><?php echo sprintf( __( 'Read the blog %s', 'theball2002' ), '&rarr;' ); ?></a></p>
 			<?php } ?>
 
 		</div><!-- /banner_copy -->
@@ -42,8 +39,6 @@ NOTES
 
 </div><!-- /site_banner -->
 
-
-
 <div id="cols" class="clearfix">
 <div class="cols_inner">
 
@@ -51,6 +46,3 @@ NOTES
 	<?php if ( $page_list ) : ?>
 		<?php load_template( $page_list ); ?>
 	<?php endif; ?>
-
-
-
