@@ -2,7 +2,7 @@
 /**
  * The Ball 2002 Child Theme Class.
  *
- * @since 1.0.0
+ * @since 1.0.1
  * @package The_Ball_2002
  */
 
@@ -19,7 +19,7 @@ defined( 'ABSPATH' ) || exit;
 class SOF_The_Ball_2002_Theme {
 
 	/**
-	 * Initialises this object.
+	 * Constructor.
 	 *
 	 * @since 1.0.1
 	 */
@@ -31,19 +31,15 @@ class SOF_The_Ball_2002_Theme {
 	}
 
 	/**
-	 * Include files.
+	 * Initialises this object.
 	 *
-	 * @since 1.0.0
+	 * @since 1.0.1
 	 */
 	public function initialise() {
 
-		// Include files.
+		// Bootstrap class.
 		$this->include_files();
-
-		// Set up objects and references.
 		$this->setup_objects();
-
-		// Register hooks.
 		$this->register_hooks();
 
 		/**
@@ -64,7 +60,7 @@ class SOF_The_Ball_2002_Theme {
 
 		// Only do this once.
 		static $done;
-		if ( isset( $done ) && $done === true ) {
+		if ( isset( $done ) && true === $done ) {
 			return;
 		}
 
@@ -85,7 +81,7 @@ class SOF_The_Ball_2002_Theme {
 
 		// Only do this once.
 		static $done;
-		if ( isset( $done ) && $done === true ) {
+		if ( isset( $done ) && true === $done ) {
 			return;
 		}
 
@@ -95,7 +91,7 @@ class SOF_The_Ball_2002_Theme {
 	}
 
 	/**
-	 * Register WordPress hooks.
+	 * Register hook callbacks.
 	 *
 	 * @since 1.0.1
 	 */
@@ -217,7 +213,7 @@ class SOF_The_Ball_2002_Theme {
 	/**
 	 * Override active menu item for a custom post type.
 	 *
-	 * @since 1.0.0
+	 * @since 1.0.1
 	 *
 	 * @param string $menu The existing active menu item.
 	 * @return string $menu The modified active menu item.
@@ -246,7 +242,7 @@ class SOF_The_Ball_2002_Theme {
 	/**
 	 * Override video height.
 	 *
-	 * @since 1.0.0
+	 * @since 1.0.1
 	 *
 	 * @param array $default The default video height.
 	 * @return array $height The modified video height.
@@ -261,7 +257,7 @@ class SOF_The_Ball_2002_Theme {
 	/**
 	 * Override topics title.
 	 *
-	 * @since 1.0.0
+	 * @since 1.0.1
 	 *
 	 * @param array $default The default topics title.
 	 * @return array $title The modified topics title.
